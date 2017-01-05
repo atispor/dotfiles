@@ -44,8 +44,8 @@ endif
 
 " NERDTree
 " --------
-autocmd vimenter * NERDTree
-map <C-n> :NERDTreeToggle<CR>
+"autocmd vimenter * NERDTree
+map <C-n> :NERDTreeCWD<CR>
 let NERDTreeShowHidden=1
 
 " CtrlP

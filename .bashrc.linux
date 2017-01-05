@@ -8,3 +8,11 @@ alias ls="ls --color=auto"
 
 export GIT_COMPLETION="/etc/bash_completion.d/git"
 export GIT_PROMPT="/etc/bash_completion.d/git-prompt"
+
+# Dev environment vars
+export JAVA_HOME="$HOME/Downloads/jdk1.8.0_45"
+export GRADLE_HOME="$HOME/Downloads/gradle-3.1"
+export PATH="$PATH:$JAVA_HOME/bin:$GRADLE_HOME/bin"
+
+export BOOST_PATH="$HOME/Dev/dgcx_emapic_builder/dep3p/boost_1_55_0"
+export ZLIB_PATH="$HOME/Dev/dgcx_emapic_builder/dep3p/zlib-1.2.8"

@@ -18,3 +18,7 @@ tags
 # Python
 
 env/
+
+
+*.o
+*.TxLog
