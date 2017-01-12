@@ -16,8 +16,8 @@ alias date="date +\"%Y-%m-%d %T\""
 
 export EDITOR=$(command -v vim)
 
-# Aliases
 
+#Aliases
 alias bi="bundle install --path vendor/bundle"
 alias df="df -h"
 alias du="du -h"
@@ -53,10 +53,6 @@ if [ ! -z $GIT_PROMPT -a -r $GIT_PROMPT ]; then
   source $GIT_PROMPT
   export PS1="\W \$(__git_ps1 '(%s) ')λ "
 fi
-
-# Python
-
-export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 # GPG
 
