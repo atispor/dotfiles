@@ -2,7 +2,7 @@
 
 # Prompt
 
-export PS1="\W λ "
+export PS1="\W $ "
 
 # Locale
 
@@ -15,7 +15,6 @@ alias date="date +\"%Y-%m-%d %T\""
 # Editor
 
 export EDITOR=$(command -v vim)
-
 
 #Aliases
 alias bi="bundle install --path vendor/bundle"
@@ -68,6 +67,22 @@ export PATH="$HOME/bin:$PATH"
 
 export BASHRC_HOST="$HOME/.bashrc.host"
 
+
 if [ -r $BASHRC_HOST ]; then
   source $BASHRC_HOST
 fi
+
+# Auto jump -> https://github.com/wting/autojump
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+# Syntax highlighting
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Theme 
+#
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs newline status)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+POWERLEVEL9K_MODE='nerdfont-complete'
+
+source ~/powerlevel9k/powerlevel9k.zsh-theme

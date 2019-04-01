@@ -2,10 +2,15 @@
 
 vendor/bundle
 
+# IntelliJ
+
+.idea
+
 # Vim
 
 *.sw?
 .netrw*
+.vim
 
 # Finder
 
