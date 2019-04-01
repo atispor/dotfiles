@@ -122,7 +122,6 @@ VIM_VINEGAR_URL="https://github.com/tpope/vim-vinegar.git"
 VIM_NERDTREE_URL="https://github.com/scrooloose/nerdtree.git"
 VIM_CTRLP_URL="https://github.com/ctrlpvim/ctrlp.vim.git"
 VIM_SYNTASTIC_URL="https://github.com/vim-syntastic/syntastic.git"
-ITERM2_POWERLEVEL9K_THEME_URL="https://github.com/bhilburn/powerlevel9k.git"
 
 pack=".vim/pack/default/start"
 
@@ -142,9 +141,6 @@ clone_repository $VIM_VINEGAR_URL "$pack/vim-vinegar"
 clone_repository $VIM_NERDTREE_URL ".vim/bundle/nerdtree"
 clone_repository $VIM_CTRLP_URL ".vim/bundle/ctrlp.vim"
 clone_repository $VIM_SYNTASTIC_URL ".vim/bundle/syntastic.vim"
-
-clone_repository $ITERM2_POWERLEVEL9K_THEME_URL "~/.oh-my-zsh/custom/themes/powerlevel9k"
-echo 'source  ~/powerlevel9k/powerlevel9k.zsh-theme' >> ~/.zshrc
 
 if [ $colors_flag -ne 0 ]; then
   BASE16_VIM_URL="https://github.com/jvirtanen/base16-vim.git"
